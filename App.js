@@ -4,12 +4,7 @@ import Landing from './src/components/Landing';
 import Signin from './src/components/Signin';
 
 const AppNavigator = createStackNavigator({
-  LandingScreen: {
-    screen: Landing,
-    navigationOptions: {
-      header: null,
-    }
-  },
+  LandingScreen: { screen: Landing },
   SigninScreen: { screen: Signin }
 });
 

@@ -58,6 +58,12 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'center',
+    borderColor: '#303030',
+    borderBottomWidth: 1,
+    shadowColor: '#000000',
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    elevation: 1,
   },
   facebookButton: {
     width: '100%',
@@ -82,6 +88,10 @@ const styles = StyleSheet.create({
 });
 
 class Landing extends React.Component {
+  static navigationOptions = {
+    header: null,
+  };
+
   static propTypes = {
     navigation: PropTypes.shape({
       navigate: PropTypes.func.isRequired,

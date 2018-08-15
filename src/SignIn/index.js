@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
   button: {
     width: '100%',
     backgroundColor: '#FFFFFF',
-    paddingTop: 20,
-    paddingBottom: 20,
+    paddingTop: 15,
+    paddingBottom: 15,
     borderRadius: 100,
     alignItems: 'center',
     justifyContent: 'center',
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class Signin extends React.Component {
+class SignIn extends React.Component {
   static navigationOptions = {
     title: '로그인',
   };
@@ -96,4 +96,4 @@ class Signin extends React.Component {
   }
 }
 
-export default Signin;
+export default SignIn;

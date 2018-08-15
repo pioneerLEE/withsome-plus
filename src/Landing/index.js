@@ -110,7 +110,7 @@ class Landing extends React.Component {
         >
           <View style={styles.contentContainer}>
             <View style={styles.topContainer}>
-              <Image style={styles.logoGraphic} source={require('../../../assets/logo.png')} />
+              <Image style={styles.logoGraphic} source={require('../../assets/logo.png')} />
               <Text style={styles.logoType}>Withsome+</Text>
             </View>
             <View style={styles.buttonContainer}>
@@ -118,10 +118,10 @@ class Landing extends React.Component {
                 <Text style={styles.facebookButtonText}>페이스북으로 로그인</Text>
               </TouchableHighlight>
               <View style={styles.commonButtonContainer}>
-                <TouchableHighlight style={[styles.button, styles.signinButton]} onPress={() => navigation.navigate('SigninScreen')}>
+                <TouchableHighlight style={[styles.button, styles.signinButton]} onPress={() => navigation.navigate('SignInScreen')}>
                   <Text style={styles.commonButtonText}>로그인</Text>
                 </TouchableHighlight>
-                <TouchableHighlight style={[styles.button, styles.signupButton]}>
+                <TouchableHighlight style={[styles.button, styles.signupButton]} onPress={() => navigation.navigate('SignUpScreen')}>
                   <Text style={styles.commonButtonText}>회원가입</Text>
                 </TouchableHighlight>
               </View>

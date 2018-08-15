@@ -1,11 +1,15 @@
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
-import Landing from './src/components/Landing';
-import Signin from './src/components/Signin';
+import Landing from './src/Landing';
+import SignIn from './src/SignIn';
+import SignUp from './src/SignUp';
+import EmailVerification from './src/SignUp/EmailVerification';
 
 const AppNavigator = createStackNavigator({
   LandingScreen: { screen: Landing },
-  SigninScreen: { screen: Signin }
+  SignInScreen: { screen: SignIn },
+  SignUpScreen: { screen: SignUp },
+  EmailVerificationScreen: { screen: EmailVerification },
 });
 
 class App extends React.Component {

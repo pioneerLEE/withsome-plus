@@ -9,5 +9,6 @@ module.exports = {
         "react/jsx-filename-extension": 0,
         "react/prefer-stateless-function": 0,
         "arrow-body-style": 0,
+        "global-require": 0
     },
 };

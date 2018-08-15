@@ -1,5 +1,6 @@
 module.exports = {
     "extends": "airbnb",
+    "parser": "babel-eslint",
     "rules": {
         "linebreak-style": 0,
         "comma-dangle": 0,

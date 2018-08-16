@@ -3,9 +3,9 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   TouchableHighlight
 } from 'react-native';
+import InputForm from '../components/InputForm';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,23 +16,7 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     flex: 9,
-  },
-  controlContainer: {
-    marginTop: 160,
-  },
-  controlText: {
-    fontSize: 20,
-    fontWeight: 'bold'
-  },
-  control: {
-    paddingTop: 10,
-    paddingBottom: 10,
-    paddingLeft: 5,
-    paddingRight: 5,
-    fontSize: 18,
-  },
-  pwControlText: {
-    marginTop: 30,
+    justifyContent: 'center',
   },
   buttonContainer: {
     flex: 2,
@@ -76,12 +60,8 @@ class SignIn extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.formContainer}>
-          <View style={styles.controlContainer}>
-            <Text style={styles.controlText}>이메일</Text>
-            <TextInput style={styles.control} keyboardType="email-address" />
-            <Text style={[styles.controlText, styles.pwControlText]} secureTextEntry>비밀번호</Text>
-            <TextInput style={styles.control} />
-          </View>
+          <InputForm title="이메일" type="email-address" />
+          <InputForm title="비밀번호" secure />
           <View style={styles.forgetTextContainer}>
             <Text style={styles.forgetText}>비밀번호를 잊었나요?</Text>
           </View>

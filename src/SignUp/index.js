@@ -3,10 +3,10 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   TouchableHighlight
 } from 'react-native';
 import PropTypes from 'prop-types';
+import InputForm from '../components/InputForm';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,20 +17,7 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     flex: 9,
-  },
-  controlContainer: {
-    marginTop: 230,
-  },
-  controlText: {
-    fontSize: 20,
-    fontWeight: 'bold'
-  },
-  control: {
-    paddingTop: 20,
-    paddingBottom: 10,
-    paddingLeft: 5,
-    paddingRight: 5,
-    fontSize: 20,
+    justifyContent: 'center',
   },
   buttonContainer: {
     flex: 2,
@@ -73,10 +60,7 @@ class SignUp extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.formContainer}>
-          <View style={styles.controlContainer}>
-            <Text style={styles.controlText}>이메일</Text>
-            <TextInput style={styles.control} keyboardType="email-address" />
-          </View>
+          <InputForm title="이메일" type="email-address" />
         </View>
         <View style={styles.buttonContainer}>
           <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('EmailVerificationScreen')}>

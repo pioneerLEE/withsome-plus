@@ -78,7 +78,7 @@ class SignIn extends React.Component {
         <View style={styles.formContainer}>
           <View style={styles.controlContainer}>
             <Text style={styles.controlText}>이메일</Text>
-            <TextInput style={styles.control} />
+            <TextInput style={styles.control} keyboardType="email-address" />
             <Text style={[styles.controlText, styles.pwControlText]} secureTextEntry>비밀번호</Text>
             <TextInput style={styles.control} />
           </View>

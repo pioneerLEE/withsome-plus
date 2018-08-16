@@ -25,11 +25,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   control: {
-    paddingTop: 10,
+    paddingTop: 20,
     paddingBottom: 10,
     paddingLeft: 5,
     paddingRight: 5,
-    fontSize: 18,
+    fontSize: 20,
   },
   buttonContainer: {
     flex: 2,
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 10,
+    marginTop: 20,
   },
   resendText: {
     textDecorationLine: 'underline',
@@ -79,7 +79,7 @@ class SignUp extends React.Component {
         <View style={styles.formContainer}>
           <View style={styles.controlContainer}>
             <Text style={styles.controlText}>인증번호 (4자리)</Text>
-            <TextInput style={styles.control} />
+            <TextInput style={styles.control} maxLength={4} keyboardType="numeric" />
           </View>
           <View style={styles.textContainer}>
             <Text style={styles.resendText}>인증번호 다시 보내기</Text>

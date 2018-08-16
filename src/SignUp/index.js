@@ -26,11 +26,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   control: {
-    paddingTop: 10,
+    paddingTop: 20,
     paddingBottom: 10,
     paddingLeft: 5,
     paddingRight: 5,
-    fontSize: 18,
+    fontSize: 20,
   },
   buttonContainer: {
     flex: 2,
@@ -75,7 +75,7 @@ class SignUp extends React.Component {
         <View style={styles.formContainer}>
           <View style={styles.controlContainer}>
             <Text style={styles.controlText}>이메일</Text>
-            <TextInput style={styles.control} />
+            <TextInput style={styles.control} keyboardType="email-address" />
           </View>
         </View>
         <View style={styles.buttonContainer}>

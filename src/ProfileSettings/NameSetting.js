@@ -63,7 +63,7 @@ class NameSetting extends React.Component {
           <InputForm title="이름" spec="다른 사람에게 보이는 이름이며, 언제든 변경할 수 있습니다." />
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('')}>
+          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('SexSettingScreen')}>
             <Text style={styles.buttonText}>확인</Text>
           </TouchableHighlight>
         </View>

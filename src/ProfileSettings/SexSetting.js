@@ -93,7 +93,7 @@ class SexSetting extends React.Component {
           </View>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('SexSettingScreen')}>
+          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('BirthSettingScreen')}>
             <Text style={styles.buttonText}>확인</Text>
           </TouchableHighlight>
         </View>

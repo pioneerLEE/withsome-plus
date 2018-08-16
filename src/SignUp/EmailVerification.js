@@ -3,9 +3,10 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   TouchableHighlight
 } from 'react-native';
+import PropTypes from 'prop-types';
+import InputForm from '../components/InputForm';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,20 +17,7 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     flex: 9,
-  },
-  controlContainer: {
-    marginTop: 180,
-  },
-  controlText: {
-    fontSize: 20,
-    fontWeight: 'bold'
-  },
-  control: {
-    paddingTop: 20,
-    paddingBottom: 10,
-    paddingLeft: 5,
-    paddingRight: 5,
-    fontSize: 20,
+    justifyContent: 'center',
   },
   buttonContainer: {
     flex: 2,
@@ -68,26 +56,31 @@ const styles = StyleSheet.create({
   }
 });
 
-class SignUp extends React.Component {
+class EmailVerification extends React.Component {
   static navigationOptions = {
     title: '회원가입',
   };
 
+  static propTypes = {
+    navigation: PropTypes.shape({
+      navigate: PropTypes.func.isRequired,
+    }).isRequired,
+  };
+
   render() {
+    const { navigation } = this.props;
+
     return (
       <View style={styles.container}>
         <View style={styles.formContainer}>
-          <View style={styles.controlContainer}>
-            <Text style={styles.controlText}>인증번호 (4자리)</Text>
-            <TextInput style={styles.control} maxLength={4} keyboardType="numeric" />
-          </View>
+          <InputForm title="4자리 인증번호" length={4} type="numeric" />
           <View style={styles.textContainer}>
             <Text style={styles.resendText}>인증번호 다시 보내기</Text>
             <Text style={styles.infoText}>이메일을 인증하면 이용약관과 개인정보취급방침에 동의하는 것으로 간주합니다.</Text>
           </View>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight style={styles.button}>
+          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('PasswordSettingScreen')}>
             <Text style={styles.buttonText}>확인</Text>
           </TouchableHighlight>
         </View>
@@ -96,4 +89,4 @@ class SignUp extends React.Component {
   }
 }
 
-export default SignUp;
+export default EmailVerification;

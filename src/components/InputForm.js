@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   },
   controlText: {
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   control: {
     paddingTop: 20,
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
     paddingLeft: 5,
     fontSize: 12,
-  }
+  },
 });
 
 class InputForm extends React.Component {
@@ -55,7 +55,7 @@ class InputForm extends React.Component {
       holder,
       type,
       secure,
-      length
+      length,
     } = this.props;
     let specText;
 

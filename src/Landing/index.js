@@ -5,7 +5,7 @@ import {
   Text,
   ImageBackground,
   Image,
-  TouchableHighlight
+  TouchableHighlight,
 } from 'react-native';
 import PropTypes from 'prop-types';
 
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   commonButtonText: {
     color: '#000000',
-  }
+  },
 });
 
 class Landing extends React.Component {

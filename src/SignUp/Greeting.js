@@ -4,9 +4,9 @@ import {
   View,
   Text,
   ImageBackground,
-  TouchableHighlight
 } from 'react-native';
 import PropTypes from 'prop-types';
+import WideFloatingButton from '../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -42,25 +42,6 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flex: 2,
   },
-  button: {
-    width: '100%',
-    backgroundColor: '#FFFFFF',
-    paddingTop: 15,
-    paddingBottom: 15,
-    borderRadius: 100,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderColor: '#D0D0D0',
-    borderBottomWidth: 1,
-    shadowColor: '#000000',
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    elevation: 1,
-  },
-  buttonText: {
-    fontSize: 17,
-    color: '#000000',
-  },
 });
 
 class Greeting extends React.Component {
@@ -90,9 +71,10 @@ class Greeting extends React.Component {
               <Text style={styles.textH2}>이제 프로필을 설정해보세요.</Text>
             </View>
             <View style={styles.buttonContainer}>
-              <TouchableHighlight style={styles.button}>
-                <Text style={styles.buttonText} onPress={() => navigation.navigate('NameSettingScreen')}>프로필 설정하기</Text>
-              </TouchableHighlight>
+              <WideFloatingButton
+                text="프로필 설정하기"
+                action={() => navigation.navigate('NameSettingScreen')}
+              />
             </View>
           </View>
         </ImageBackground>

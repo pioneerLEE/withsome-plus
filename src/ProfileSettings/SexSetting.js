@@ -3,10 +3,10 @@ import {
   StyleSheet,
   View,
   Text,
-  TouchableHighlight,
   TouchableOpacity,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import WideFloatingButton from '../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   },
   controlText: {
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   radioContainer: {
     width: '100%',
@@ -32,25 +32,6 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flex: 2,
   },
-  button: {
-    width: '100%',
-    backgroundColor: '#FFFFFF',
-    paddingTop: 15,
-    paddingBottom: 15,
-    borderRadius: 100,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderColor: '#D0D0D0',
-    borderBottomWidth: 1,
-    shadowColor: '#000000',
-    shadowOpacity: 0.8,
-    shadowRadius: 2,
-    elevation: 1,
-  },
-  buttonText: {
-    fontSize: 17,
-    color: '#000000',
-  },
   radioOption: {
     backgroundColor: '#D0D0D0',
     width: 140,
@@ -58,7 +39,7 @@ const styles = StyleSheet.create({
     borderRadius: 140,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+  },
 });
 
 class SexSetting extends React.Component {
@@ -93,9 +74,10 @@ class SexSetting extends React.Component {
           </View>
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight style={styles.button} onPress={() => navigation.navigate('BirthSettingScreen')}>
-            <Text style={styles.buttonText}>확인</Text>
-          </TouchableHighlight>
+          <WideFloatingButton
+            text="확인"
+            action={() => navigation.navigate('BirthSettingScreen')}
+          />
         </View>
       </View>
     );

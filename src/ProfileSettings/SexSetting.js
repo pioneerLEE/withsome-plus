@@ -1,3 +1,8 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * TODO: radio button 기본 동작 구현.
+ */
+
 import React from 'react';
 import {
   StyleSheet,

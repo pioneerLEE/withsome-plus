@@ -1,3 +1,9 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * TODO: carousel item 사진 업로드 구현.
+ * FIXME: blank carousel item의 '+' 텍스트 벡터 아이콘으로 변경.
+ */
+
 import React from 'react';
 import {
   StyleSheet,

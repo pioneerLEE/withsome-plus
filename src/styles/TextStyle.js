@@ -1,3 +1,7 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ */
+
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({

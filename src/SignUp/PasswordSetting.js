@@ -1,3 +1,8 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * TODO: 비밀번호 형식 및 보안성 검증.
+ */
+
 import React from 'react';
 import {
   StyleSheet,

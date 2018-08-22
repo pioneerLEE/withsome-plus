@@ -1,3 +1,8 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * FIXME: components 구조 리팩토링
+ */
+
 import React from 'react';
 import {
   StyleSheet,

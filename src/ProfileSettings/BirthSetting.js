@@ -1,3 +1,8 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * TODO: day combo box item에 월별 마지막 일자 출력.
+ */
+
 import React from 'react';
 import {
   StyleSheet,
@@ -69,7 +74,6 @@ class BirthSetting extends React.Component {
     });
   };
 
-  // TODO: day 콤보 박스 item에 월별 마지막 일자 구해서 출력하기. (day.js)
   render() {
     const { navigation } = this.props;
     const { day, month, year } = this.state;

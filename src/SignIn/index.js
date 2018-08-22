@@ -1,3 +1,8 @@
+/**
+ * Created by Park Seong-beom on 2018.8
+ * TODO: 이메일 형식 검증.
+ */
+
 import React from 'react';
 import {
   StyleSheet,

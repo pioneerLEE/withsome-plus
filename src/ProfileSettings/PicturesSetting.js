@@ -16,6 +16,7 @@ import {
 import PropTypes from 'prop-types';
 import Carousel from 'react-native-snap-carousel';
 import WideFloatingButton from '../components/WideFloatingButton';
+import TextStyle from '../styles/TextStyle';
 
 const sliderWidth = Dimensions.get('window').width;
 const itemWidth = Dimensions.get('window').width - 70;
@@ -27,7 +28,6 @@ const styles = StyleSheet.create({
   },
   formContainer: {
     flex: 9,
-    alignItems: 'center',
     justifyContent: 'center',
   },
   buttonContainer: {
@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     height: itemWidth,
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop: 10,
   },
   blankCarouselItem: {
     width: '100%',
@@ -53,6 +54,9 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 64,
     fontWeight: 'bold',
+  },
+  controlText: {
+    marginLeft: 35,
   },
 });
 
@@ -116,6 +120,7 @@ class PictureSetting extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.formContainer}>
+          <Text style={[styles.controlText, TextStyle.h1Text]}>사진</Text>
           <View style={styles.carouselContainer}>
             <Carousel
               data={carouselItems}

@@ -10,6 +10,7 @@ import {
   View,
   Text,
   ImageBackground,
+  TouchableOpacity,
   Dimensions,
 } from 'react-native';
 import PropTypes from 'prop-types';
@@ -87,7 +88,7 @@ class PictureSetting extends React.Component {
   renderCarouselItem = ({ item }) => {
     if (item.img) {
       return (
-        <View>
+        <TouchableOpacity>
           <ImageBackground
             style={{ width: '100%', height: itemWidth }}
             imageStyle={{ resizeMode: 'cover' }}
@@ -96,13 +97,15 @@ class PictureSetting extends React.Component {
           >
             <View />
           </ImageBackground>
-        </View>
+        </TouchableOpacity>
       );
     }
     return (
-      <View style={styles.blankCarouselItem}>
-        <Text style={styles.blankCarouselItemText}>+</Text>
-      </View>
+      <TouchableOpacity>
+        <View style={styles.blankCarouselItem}>
+          <Text style={styles.blankCarouselItemText}>+</Text>
+        </View>
+      </TouchableOpacity>
     );
   }
 

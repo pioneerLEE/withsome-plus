@@ -42,6 +42,7 @@ class InputForm extends React.Component {
     type: PropTypes.string,
     secure: PropTypes.bool,
     length: PropTypes.number,
+    multiline: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -49,6 +50,7 @@ class InputForm extends React.Component {
     holder: '',
     type: '',
     secure: false,
+    multiline: false,
     length: null,
   };
 
@@ -60,6 +62,7 @@ class InputForm extends React.Component {
       type,
       secure,
       length,
+      multiline,
     } = this.props;
     let specText;
 
@@ -76,6 +79,7 @@ class InputForm extends React.Component {
           keyboardtype={type}
           secureTextEntry={secure}
           maxLength={length}
+          multiline={multiline}
         />
         {specText}
       </View>

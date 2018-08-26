@@ -11,4 +11,7 @@ module.exports = {
         "arrow-body-style": 0,
         "global-require": 0
     },
+    "env": {
+        "jest": 1
+    }
 };

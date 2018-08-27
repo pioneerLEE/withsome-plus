@@ -149,7 +149,7 @@ class TagSetting extends React.Component {
         <View style={styles.buttonContainer}>
           <WideFloatingButton
             text="확인"
-            action={() => navigation.navigate('TagSettingScreen')}
+            action={() => navigation.navigate('MainScreen')}
           />
         </View>
       </View>

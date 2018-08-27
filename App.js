@@ -15,6 +15,8 @@ import SexSetting from './src/ProfileSettings/SexSetting';
 import BirthSetting from './src/ProfileSettings/BirthSetting';
 import PicturesSetting from './src/ProfileSettings/PicturesSetting';
 import BioSetting from './src/ProfileSettings/BioSetting';
+import TagSetting from './src/ProfileSettings/TagSetting';
+import Main from './src/Main';
 
 const AppNavigator = createStackNavigator({
   LandingScreen: { screen: Landing },
@@ -28,8 +30,10 @@ const AppNavigator = createStackNavigator({
   BirthSettingScreen: { screen: BirthSetting },
   PicturesSettingScreen: { screen: PicturesSetting },
   BioSettingScreen: { screen: BioSetting },
+  TagSettingScreen: { screen: TagSetting },
+  MainScreen: { screen: Main },
 }, {
-  initialRouteName: 'SignInScreen',
+  initialRouteName: 'MainScreen',
 });
 
 class App extends React.Component {

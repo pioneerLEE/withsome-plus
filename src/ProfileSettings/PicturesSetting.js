@@ -105,6 +105,7 @@ class PictureSetting extends React.Component {
         </TouchableOpacity>
       );
     }
+
     return (
       <TouchableOpacity>
         <View style={styles.blankCarouselItem}>

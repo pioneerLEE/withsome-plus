@@ -20,6 +20,7 @@ import TextStyle from '../styles/TextStyle';
 
 const sliderWidth = Dimensions.get('window').width;
 const itemWidth = Dimensions.get('window').width - 70;
+const itemHeight = itemWidth + 100;
 
 const styles = StyleSheet.create({
   container: {
@@ -37,14 +38,14 @@ const styles = StyleSheet.create({
   },
   carouselContainer: {
     width: sliderWidth,
-    height: itemWidth,
+    height: itemHeight,
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 10,
   },
   blankCarouselItem: {
     width: '100%',
-    height: itemWidth,
+    height: itemHeight,
     backgroundColor: '#DFDFDF',
     borderRadius: 30,
     alignItems: 'center',
@@ -77,7 +78,7 @@ class PictureSetting extends React.Component {
     this.state = {
       carouselItems: [
         {
-          img: 'http://upload2.inven.co.kr/upload/2017/12/04/bbs/i15505567220.png',
+          img: 'https://s3.orbi.kr/data/file/united/abe43211866fb132f736094226cc427b.jpg',
         }, {
           img: '',
         }, {
@@ -94,7 +95,7 @@ class PictureSetting extends React.Component {
       return (
         <TouchableOpacity>
           <ImageBackground
-            style={{ width: '100%', height: itemWidth }}
+            style={{ width: '100%', height: itemHeight }}
             imageStyle={{ resizeMode: 'cover' }}
             source={{ uri: item.img }}
             borderRadius={30}

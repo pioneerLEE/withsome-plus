@@ -33,6 +33,7 @@
     "react-native": "~0.55.2",
     "react-native-collapsible": "^0.13.0",
     "react-native-snap-carousel": "^3.7.2",
+    "react-native-swipe-cards": "^0.1.1",
     "react-navigation": "^2.11.2",
     "uuid": "^3.3.2"
   }

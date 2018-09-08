@@ -15,8 +15,8 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Carousel from 'react-native-snap-carousel';
-import WideFloatingButton from '../components/WideFloatingButton';
-import TextStyle from '../styles/TextStyle';
+import WideFloatingButton from '../../components/WideFloatingButton';
+import TextStyle from '../../styles/TextStyle';
 
 const sliderWidth = Dimensions.get('window').width;
 const itemWidth = Dimensions.get('window').width - 70;

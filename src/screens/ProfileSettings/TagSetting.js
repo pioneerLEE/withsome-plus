@@ -17,8 +17,8 @@ import {
 import PropTypes from 'prop-types';
 import uuidvl from 'uuid';
 import Accordion from 'react-native-collapsible/Accordion';
-import WideFloatingButton from '../components/WideFloatingButton';
-import TextStyle from '../styles/TextStyle';
+import WideFloatingButton from '../../components/WideFloatingButton';
+import TextStyle from '../../styles/TextStyle';
 
 const styles = StyleSheet.create({
   container: {

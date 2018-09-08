@@ -10,7 +10,7 @@ import {
   ImageBackground,
 } from 'react-native';
 import PropTypes from 'prop-types';
-import WideFloatingButton from '../components/WideFloatingButton';
+import WideFloatingButton from '../../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {

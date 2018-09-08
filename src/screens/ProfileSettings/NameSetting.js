@@ -8,8 +8,8 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
-import InputForm from '../components/InputForm';
-import WideFloatingButton from '../components/WideFloatingButton';
+import InputForm from '../../components/InputForm';
+import WideFloatingButton from '../../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {

@@ -11,8 +11,8 @@ import {
   Picker,
 } from 'react-native';
 import PropTypes from 'prop-types';
-import TextStyles from '../styles/TextStyle';
-import WideFloatingButton from '../components/WideFloatingButton';
+import TextStyles from '../../styles/TextStyle';
+import WideFloatingButton from '../../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {

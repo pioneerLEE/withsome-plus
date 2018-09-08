@@ -115,7 +115,7 @@ class Landing extends React.Component {
         >
           <View style={styles.contentContainer}>
             <View style={styles.topContainer}>
-              <Image style={styles.logoGraphic} source={require('../../assets/logo.png')} />
+              <Image style={styles.logoGraphic} source={require('../../../assets/logo.png')} />
               <Text style={styles.logoType}>Withsome+</Text>
             </View>
             <View style={styles.buttonContainer}>

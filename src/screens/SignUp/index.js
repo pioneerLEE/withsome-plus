@@ -1,5 +1,6 @@
 /**
  * Created by Park Seong-beom on 2018.8
+ * TODO: 이메일 형식 검증.
  */
 
 import React from 'react';
@@ -8,8 +9,8 @@ import {
   View,
 } from 'react-native';
 import PropTypes from 'prop-types';
-import InputForm from '../components/InputForm';
-import WideFloatingButton from '../components/WideFloatingButton';
+import InputForm from '../../components/InputForm';
+import WideFloatingButton from '../../components/WideFloatingButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -27,9 +28,9 @@ const styles = StyleSheet.create({
   },
 });
 
-class BioSetting extends React.Component {
+class SignUp extends React.Component {
   static navigationOptions = {
-    title: '프로필',
+    title: '회원가입',
   };
 
   static propTypes = {
@@ -44,12 +45,12 @@ class BioSetting extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.formContainer}>
-          <InputForm title="소개" spec="성향, 취미 등을 자유롭게 써주세요." multiline />
+          <InputForm title="이메일" type="email-address" />
         </View>
         <View style={styles.buttonContainer}>
           <WideFloatingButton
             text="확인"
-            action={() => navigation.navigate('TagSettingScreen')}
+            action={() => navigation.navigate('EmailVerificationScreen')}
           />
         </View>
       </View>
@@ -57,4 +58,4 @@ class BioSetting extends React.Component {
   }
 }
 
-export default BioSetting;
+export default SignUp;

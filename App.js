@@ -4,19 +4,19 @@
 
 import React from 'react';
 import { createStackNavigator } from 'react-navigation';
-import Landing from './src/Landing';
-import SignIn from './src/SignIn';
-import SignUp from './src/SignUp';
-import EmailVerification from './src/SignUp/EmailVerification';
-import PasswordSetting from './src/SignUp/PasswordSetting';
-import Greeting from './src/SignUp/Greeting';
-import NameSetting from './src/ProfileSettings/NameSetting';
-import SexSetting from './src/ProfileSettings/SexSetting';
-import BirthSetting from './src/ProfileSettings/BirthSetting';
-import PicturesSetting from './src/ProfileSettings/PicturesSetting';
-import BioSetting from './src/ProfileSettings/BioSetting';
-import TagSetting from './src/ProfileSettings/TagSetting';
-import Main from './src/Main';
+import Landing from './src/screens/Landing';
+import SignIn from './src/screens/SignIn';
+import SignUp from './src/screens/SignUp';
+import EmailVerification from './src/screens/SignUp/EmailVerification';
+import PasswordSetting from './src/screens/SignUp/PasswordSetting';
+import Greeting from './src/screens/SignUp/Greeting';
+import NameSetting from './src/screens/ProfileSettings/NameSetting';
+import SexSetting from './src/screens/ProfileSettings/SexSetting';
+import BirthSetting from './src/screens/ProfileSettings/BirthSetting';
+import PicturesSetting from './src/screens/ProfileSettings/PicturesSetting';
+import BioSetting from './src/screens/ProfileSettings/BioSetting';
+import TagSetting from './src/screens/ProfileSettings/TagSetting';
+import Main from './src/screens/Main';
 
 const AppNavigator = createStackNavigator({
   LandingScreen: { screen: Landing },

@@ -33,7 +33,7 @@ const AppNavigator = createStackNavigator({
   TagSettingScreen: { screen: TagSetting },
   MainScreen: { screen: Main },
 }, {
-  initialRouteName: 'MainScreen',
+  initialRouteName: 'LandingScreen',
 });
 
 class App extends React.Component {
